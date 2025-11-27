@@ -1,0 +1,11 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suporte">
+  <defs>
+    <linearGradient id="support" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B0038"/>
+      <stop offset="100%" stop-color="#F39F3F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="36" cy="28" r="12" stroke="url(#support)" stroke-width="4" fill="none"/>
+  <path d="M14 52c3-8 12-14 22-14s19 6 22 14" stroke="#D5306D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <circle cx="36" cy="36" r="32" stroke="#FA6D91" stroke-width="2" opacity="0.3" fill="none"/>
+</svg>
