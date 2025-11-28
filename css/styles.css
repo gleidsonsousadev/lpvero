@@ -388,11 +388,6 @@ body {
 	border-radius: 999px;
 	font-size: 0.85rem;
 }
-.plan-card--featured {
-	transform: scale(1.03);
-	background: #fff;
-	color: var(--color-bordo-escuro);
-}
 .plan-card__badge--highlight {
 	background: var(--color-amarelo);
 	color: var(--color-bordo-escuro);
@@ -427,6 +422,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 1.8rem;
+	align-items: center;
 }
 .plan-card {
 	display: flex;
@@ -436,6 +432,7 @@ body {
 	background: #d63066;
 	color: #fff;
 	border-radius: 32px;
+	height: fit-content;
 }
 .plan-card h3 {
 	font-size: 1.6rem;
@@ -493,6 +490,7 @@ body {
 .plan-card--featured {
 	background: #fff;
 	color: #8b0038;
+	padding: 3rem 2.6rem 3rem;
 }
 .plan-card--featured p {
 	color: #7c2145;
@@ -521,6 +519,9 @@ body {
 	background:rgba(255,255,255,.5);
 	margin:0 0 1rem;
 }
+.plan-card--featured li {
+	align-items: center;
+}
 .plan-card__divider--light{background:#ECEEEC}
 .plan-card--featured li::before {
 	display: none;
@@ -530,6 +531,7 @@ body {
 .plan-card--featured li img {
 	width: 16px;
 	height: 16px;
+	align-items: center;
 }
 .plan-card__btn {
 	display: inline-flex;
@@ -553,6 +555,7 @@ body {
 	background: #d63066;
 	box-shadow: none;
 	padding: 2.5rem 2rem;
+	height: auto;
 }
 .plan-card--residencial .plan-card__badge {
 	position: static;
@@ -594,6 +597,7 @@ body {
 	background: #d63066;
 	box-shadow: none;
 	padding: 2.5rem 2rem;
+	height: auto;
 }
 .plan-card--empresas .plan-card__badge {
 	position: static;
@@ -1033,10 +1037,7 @@ body.modal-open {
 	.benefits__grid {
 		grid-template-columns: 1fr;
 	}
-	.plan-card--featured {
-		transform: none;
-	}
-	.cta-final {
+		.cta-final {
 		padding: 2rem;
 	}
 	.scroll-top {
