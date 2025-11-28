@@ -155,6 +155,7 @@ const toggleCityModal = (open) => {
 	if (!cityModal) return;
 	cityModal.classList.toggle('is-active', open);
 	cityModal.setAttribute('aria-hidden', (!open).toString());
+	cityModal.hidden = !open;
 	document.body.classList.toggle('modal-open', open);
 	if (open) {
 		resetCityModalState();

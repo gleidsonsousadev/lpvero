@@ -24,10 +24,7 @@
     media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="preload" href="css/styles.css" as="style">
-  <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="css/styles.css">
-  </noscript>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
     :root {
       --color-rosa-vero: #D5195F;
@@ -387,7 +384,7 @@
   </main>
 
   <div class="city-modal" id="city-modal" role="dialog" aria-modal="true" aria-labelledby="city-modal-title"
-    aria-hidden="true">
+    aria-hidden="true" hidden>
     <div class="city-modal__overlay" data-modal-close></div>
     <div class="city-modal__box" role="document">
       <button class="city-modal__close" aria-label="Fechar seleção de cidade" data-modal-close>&times;</button>
