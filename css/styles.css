@@ -296,7 +296,6 @@ body {
 	background: #fff;
 	border-radius: 34px;
 	padding: 1.5rem 2rem;
-	box-shadow: 0 30px 60px rgba(198, 204, 207, 0.35);
 	border: 1px solid #f4f4f1;
 	display: flex;
 	flex-direction: column;
@@ -384,6 +383,9 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 1.8rem;
 	align-items: stretch;
+}
+.plan-card {
+	scroll-snap-align: start;
 }
 .plan-card {
 	display: flex;
@@ -811,7 +813,6 @@ body {
 	border-radius: 32px;
 	padding: 2.5rem 2rem;
 	text-align: center;
-	box-shadow: 0 30px 60px rgba(198, 204, 207, 0.35);
 	border: 1px solid #f4f4f1;
 	display: flex;
 	flex-direction: column;
@@ -1080,6 +1081,22 @@ body {
 	animation: pulse 3s infinite;
 	z-index: 1200;
 }
+
+@media (min-width: 769px) {
+	.footer__bottom-content {
+		flex-direction: row;
+		text-align: left;
+	}
+	.footer__links {
+		order: -1;
+	}
+	.footer__links a {
+		text-align: left;
+	}
+	.footer__bottom-content small {
+		margin-left: auto;
+	}
+}
 .whatsapp__icon svg {
 	width: 26px;
 	height: 26px;
@@ -1221,6 +1238,35 @@ body.modal-open {
 	.benefits__grid {
 		grid-template-columns: 1fr;
 	}
+	.plans__grid {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		gap: 1rem;
+		padding: 0 1rem 1rem;
+	}
+	.plans__grid::-webkit-scrollbar {
+		display: none;
+	}
+	.plan-card {
+		min-width: calc(100% - 2rem);
+		flex: 0 0 calc(100% - 2rem);
+	}
+	.benefits__grid {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		gap: 1rem;
+		padding: 0 1rem 1rem;
+	}
+	.benefits__grid::-webkit-scrollbar {
+		display: none;
+	}
+	.benefit-card {
+		min-width: calc(100% - 2rem);
+		flex: 0 0 calc(100% - 2rem);
+		scroll-snap-align: start;
+	}
 	.benefits__subtitle {
 		font-size: 1.2rem;
 	}
@@ -1248,16 +1294,29 @@ body.modal-open {
 		margin: 0 auto 1rem;
 	}
 	.metrics__grid {
-		grid-template-columns: 1fr;
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		gap: 1rem;
+		padding: 0 1rem 1rem;
+	}
+	.metrics__grid::-webkit-scrollbar {
+		display: none;
+	}
+	.metrics__card {
+		min-width: calc(100% - 2rem);
+		flex: 0 0 calc(100% - 2rem);
+		scroll-snap-align: start;
+		padding: 2rem 1.5rem;
+	}
+	.metrics__card:last-child {
+		margin-right: 1rem;
 	}
 	.metrics__title {
 		font-size: 2.4rem;
 	}
 	.metrics__description {
 		font-size: 1.4rem;
-	}
-	.metrics__card {
-		padding: 2rem 1.5rem;
 	}
 	.ready-cta__box h2 {
 		font-size: 2.4rem;
