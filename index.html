@@ -84,47 +84,31 @@
       <a href="#inicio" class="site-header__logo" aria-label="Página inicial Vero">
         <img src="images/logo-vero.svg" alt="Vero Internet" width="110" height="36">
       </a>
-      <div class="site-header__city">
-        <div class="site-header__city-info">
-          <span class="site-header__city-label">Cidade</span>
-          <strong id="selected-city">Belo Horizonte - MG</strong>
-        </div>
-        <button type="button" class="site-header__change" data-modal-open>
-          <span aria-hidden="true" class="icon icon--swap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
-              <path
-                d="M0.750977 9.22003V11.338C0.750845 11.8943 0.86029 12.4451 1.07306 12.959C1.28583 13.4729 1.59776 13.9399 1.99103 14.3333C2.38429 14.7266 2.8512 15.0387 3.36508 15.2516C3.87896 15.4645 4.42974 15.574 4.98598 15.574H17.691M0.750977 3.92603H13.456C14.0123 3.92589 14.5632 4.03537 15.0772 4.2482C15.5912 4.46104 16.0582 4.77305 16.4516 5.16643C16.8449 5.5598 17.157 6.02683 17.3698 6.54082C17.5826 7.05482 17.6921 7.60571 17.692 8.16202V10.279"
-                stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M14.515 12.397L17.692 15.573L14.515 18.75M3.927 7.103L0.75 3.926L3.927 0.75" stroke="#666666"
-                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-          TROCAR CIDADE
-        </button>
-      </div>
       <div class="site-header__cta">
-        <div class="chip chip--phone">
-          <span aria-hidden="true" class="icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-          0800 720 0200
+        <div class="site-header__cta-inner">
+          <div class="chip chip--phone">
+            <span aria-hidden="true" class="icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            0800 720 0200
+          </div>
+          <a class="chip chip--whats"
+            href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+            rel="noopener">
+            <span aria-hidden="true" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                  fill="#666666" />
+              </svg>
+            </span>
+            WhatsApp
+          </a>
         </div>
-        <a class="chip chip--whats"
-          href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
-          rel="noopener">
-          <span aria-hidden="true" class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path
-                d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
-                fill="#666666" />
-            </svg>
-          </span>
-          WhatsApp
-        </a>
       </div>
     </div>
   </header>
@@ -201,47 +185,66 @@
         </header>
         <div class="plans__grid">
           <article class="plan-card plan-card--residencial" data-aos="fade-up">
-            <span class="plan-card__badge">Residencial</span>
-            <h3>300 Mega</h3>
-            <p>Ideal para quem ama streaming em 4K.</p>
-            <span class="plan-card__divider" aria-hidden="true"></span>
-            <strong class="plan-card__price">R$ 109,90<span class="plan-card__price-suffix">/mês</span></strong>
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>480 Mega</h3>
+            <span class="plan-card__divider plan-card__divider--light" aria-hidden="true"></span>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 113,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
             <ul>
-              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Upload 300 Mega</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Alta Velocidade</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 5</li>
+            </ul>
+            <a class="plan-card__btn" href="#contato">Assinar</a>
+          </article>
+          <article class="plan-card plan-card--residencial" data-aos="fade-up">
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>750 Mega</h3>
+            <span class="plan-card__divider" aria-hidden="true"></span>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 122,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
+            <ul>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Alta Velocidade</li>
               <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
-              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">App de gerenciamento</li>
             </ul>
             <a class="plan-card__btn" href="#contato">Assinar</a>
           </article>
           <article class="plan-card plan-card--featured" data-aos="zoom-in">
             <span class="plan-card__badge plan-card__badge--highlight">Recomendado</span>
-            <h3>600 Mega</h3>
-            <p>Para casas conectadas e gamers exigentes.</p>
+            <h3>800 Mega</h3>
             <span class="plan-card__divider plan-card__divider--light" aria-hidden="true"></span>
             <div class="plan-card__prices">
-              <span class="plan-card__price-old">De R$ 231,00</span>
-              <strong class="plan-card__price">R$ 139,90<span class="plan-card__price-suffix plan-card__price-suffix--light">/mês</span></strong>
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 130,00</strong>
+              <span class="plan-card__price-meta plan-card__price-meta--light">por mês</span>
             </div>
             <ul>
-              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Upload 600 Mega</li>
-              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Wi-Fi 6 + repetidor</li>
-              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Priority support</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Globoplay</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Youtube Premium</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
             </ul>
             <a class="plan-card__btn" href="#contato">Quero esse plano</a>
           </article>
           <article class="plan-card plan-card--empresas" data-aos="fade-up">
-            <span class="plan-card__badge">Empresas</span>
-            <h3>1 Giga</h3>
-            <p>Conexão dedicada e monitoramento ativo.</p>
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>800 Mega</h3>
             <span class="plan-card__divider" aria-hidden="true"></span>
-            <strong class="plan-card__price">R$ 299,90<span class="plan-card__price-suffix">/mês</span></strong>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 150,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
             <ul>
-              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">IP fixo incluso</li>
-              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Suporte em até 2h</li>
-              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Consultoria de segurança
-              </li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Premiere</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Futebol</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
             </ul>
-            <a class="plan-card__btn" href="#contato">Falar com especialista</a>
+            <a class="plan-card__btn" href="#contato">Assinar</a>
           </article>
         </div>
       </div>
@@ -253,15 +256,18 @@
           <div>
             <p class="wifi__badge">Planos do seu tamanho</p>
             <h2 class="wifi__title">Wi-Fi 6: tecnologia que transforma sua experiência</h2>
-            <p class="wifi__text">Velocidade superior, menor latência e conexão estável mesmo com vários dispositivos ligados.</p>
+            <p class="wifi__text">Velocidade superior, menor latência e conexão estável mesmo com vários dispositivos
+              ligados.</p>
             <ul class="wifi__benefits">
               <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Mais velocidade</li>
               <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Menos interferência</li>
-              <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Ideal para streaming e games</li>
+              <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Ideal para streaming e games
+              </li>
             </ul>
           </div>
           <div class="wifi__media">
-            <img src="images/img-wifi.png" alt="Dispositivos conectados via Wi-Fi 6" width="520" height="320" loading="lazy">
+            <img src="images/img-wifi.png" alt="Dispositivos conectados via Wi-Fi 6" width="520" height="320"
+              loading="lazy">
           </div>
         </div>
       </div>
@@ -275,7 +281,8 @@
           </div>
           <div class="cashback__content">
             <h2>Ganhe Cashback pagando sua fatura em dia!</h2>
-            <p>Ao pagar sua primeira fatura em dia, você recebe créditos Vibes equivalentes ao valor mensal para trocar por benefícios, descontos e vantagens exclusivas.</p>
+            <p>Ao pagar sua primeira fatura em dia, você recebe créditos Vibes equivalentes ao valor mensal para trocar
+              por benefícios, descontos e vantagens exclusivas.</p>
             <a class="cashback__btn" href="#contato">Saiba como funciona</a>
           </div>
         </div>
@@ -313,17 +320,21 @@
       </div>
     </section>
 
-<section class="ready-cta" aria-label="Pronto para mudar sua internet?">
+    <section class="ready-cta" aria-label="Pronto para mudar sua internet?">
       <div class="container">
         <div class="ready-cta__box" data-aos="fade-up">
           <h2>Pronto para mudar sua internet?</h2>
           <p>Escolha seu plano agora e fale com um dos nossos especialistas.</p>
           <div class="ready-cta__actions">
             <a class="ready-cta__btn ready-cta__btn--primary" href="#planos">Assinar agora</a>
-            <a class="ready-cta__btn ready-cta__btn--whats" href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank" rel="noopener">
+            <a class="ready-cta__btn ready-cta__btn--whats"
+              href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+              rel="noopener">
               <span aria-hidden="true" class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z" fill="#8B0038"/>
+                  <path
+                    d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                    fill="#8B0038" />
                 </svg>
               </span>
               Falar no WhatsApp
@@ -331,7 +342,9 @@
             <a class="ready-cta__btn ready-cta__btn--outline" href="tel:08007200200">
               <span aria-hidden="true" class="icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#FFD31B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    stroke="#FFD31B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </span>
               0800 721 0066
@@ -350,78 +363,158 @@
         <div class="accordion" role="tablist">
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Quanto tempo leva para instalar?</span>
+              <span>Como que funciona os 6 meses de Cashback?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>A instalação ocorre em até 48h após confirmação do pedido e é totalmente gratuita.</p>
+              <p>Pagando as 6 primeiras mensalidades em dia você ganha mensalmente um cashback do valor do plano em
+                Créditos Vibe. Ou seja, a cada mensalidade que você pagar em dia, a Vero vai liberar seu cashback em
+                créditos Vibe no valor da mensalidade. Os créditos poderão ser visualizados e utilizados em ofertas e
+                recompensas. A primeira mensalidade será considerada pós instalação.</p>
             </div>
           </article>
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Existe fidelidade?</span>
+              <span>Quais as formas de pagamento aceitas?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>Planos residenciais não possuem fidelidade. Já os corporativos podem ter condições especiais mediante
-                contrato.</p>
+              <p>Nossas formas de pagamento são débito automático, cartão de crédito, boleto e PIX, e você ainda escolhe
+                a data de vencimento que melhor te atende.</p>
             </div>
           </article>
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Como funciona o suporte?</span>
+              <span>A banda larga possui limite de dados?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>Suporte 24/7 via app, telefone e WhatsApp com equipes locais treinadas.</p>
+              <p>Diferentemente de um pacote de dados, onde o usuário possui um limite de dados para ser consumido, a
+                banda larga tem uma faixa de transmissão de dados que permite a conexão de maneira contínua, sem
+                interrupções.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que tem além da internet nas ofertas da Vero?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Nossa proposta de valor é entregar tudo o que você precisa em velocidade, qualidade, e conteúdos
+                premium. Além de ser referência em internet, contamos com equipes preparadas para atender você no que
+                precisar. Temos ofertas com serviços de literatura como o Vero Livros, conteúdos exclusivos para
+                clientes com o Vero Vídeo além das parcerias com a Globoplay, Premiere, Telecine, HBO Max, e Youtube
+                Premium.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é o Wi-Fi 6?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>O Wi-Fi 6 é mais recente tecnologia em rede sem fio, proporcionando mais velocidade, e menor latência
+                de sinal (intervalo de transmissão de sinal).</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Todos os planos possuem Wi-Fi 6 sem custo adicional?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Sim, isso é uma exclusividade dos novos planos da Vero. Afinal, internet pra nós é um assunto sério e,
+                para oferecer uma experiência superior, temos o melhor da tecnologia em internet na sua casa e empresa.
+              </p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +FILMES?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de filmes pensando em quem não quer perder nada do mundo do cinema! Cerca de 47 canais ao Vivo,
+                sendo eles conteúdos de TV aberta e conteúdo dos canais telecine como Premium, Action e FUN.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +ESPORTES?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de canais variados, com todo conteúdo do esporte centralizado em um só local! Cerca de 68 canais
+                ao vivo, sendo eles conteúdos de TV aberta e canais específicos para amantes do esporte, com todos os
+                canais Premiere, todos os canais da ESPN e SPORTV!</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +DIVERSÃO?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de canais para quem não quer perder nada! Cerca de 74 canais ao vivo, sendo eles conteúdos de TV
+                aberta e conteúdo para todos os gostos com canais de Filmes, Esportes e variedades. Assista Telecine,
+                universo ESPN e HBO Max em um só lugar!</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Como faço para ter acesso ao Youtube Premium?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Com o Youtube Premium, além de aproveitar os seus vídeos favoritos sem anúncios, poderá realizar
+                downloads para assistir offline sem precisar de internet e ainda economiza seus dados móveis em
+                dispositivos portáteis.</p>
+              <p>É só vantagens: tem reprodução em segundo plano, acessos aos apps Youtube Music com um acervo de mais
+                de 100 milhões de músicas e Youtube Kids, tendo conteúdos exclusivos infantis com segurança.</p>
+              <p>Caso o seu plano Vero possua o serviço Youtube Premium:</p>
+              <ol>
+                <li>Ative a assinatura através do site/app "Minha Vero" pela área do cliente;</li>
+                <li>Você será redirecionado para o ambiente do Google, onde poderá entrar com uma conta Google já
+                  existente ou cadastrar uma nova (após vinculação desse e-mail não será possível trocá-lo);</li>
+                <li>Após o acesso da conta, a assinatura será feita e a confirmação aparecerá na tela;</li>
+                <li>Acesse o site Youtube ou baixe os apps Youtube, Youtube Music e Youtube Kids para aproveitar os
+                  conteúdos disponíveis na sua assinatura.</li>
+              </ol>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    
-  </main>
 
-  <div class="city-modal" id="city-modal" role="dialog" aria-modal="true" aria-labelledby="city-modal-title"
-    aria-hidden="true" hidden>
-    <div class="city-modal__overlay" data-modal-close></div>
-    <div class="city-modal__box" role="document">
-      <button class="city-modal__close" aria-label="Fechar seleção de cidade" data-modal-close>&times;</button>
-      <h2 id="city-modal-title">Escolha a sua cidade</h2>
-      <form id="city-form">
-        <label class="city-modal__search">
-          <span class="sr-only">Digite a cidade</span>
-          <input type="text" id="city-search" placeholder="Digite a cidade" autocomplete="off">
-        </label>
-        <hr class="city-modal__divider">
-        <p class="city-modal__subtitle">Selecione onde você está para personalizar ofertas e disponibilidades</p>
-        <div class="city-modal__results" role="radiogroup" aria-live="polite"></div>
-        <button type="submit" class="btn btn--primary city-modal__submit">Confirmar cidade</button>
-        <p class="city-modal__feedback" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
+  </main>
 
   <footer class="footer">
     <div class="container footer__content">
       <div class="footer__brand">
         <img src="images/logo-vero.svg" alt="Logo Vero" width="120" height="40">
-        <p class="footer__legal">Consulte disponibilidade e condições na sua região. Ofertas sujeitas à análise técnica.</p>
+        <p class="footer__legal">Consulte disponibilidade e condições na sua região. Ofertas sujeitas à análise técnica.
+        </p>
       </div>
       <div class="footer__actions">
         <a class="chip chip--phone">
           <span aria-hidden="true" class="icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </span>
           0800 720 0200
         </a>
-        <a class="chip chip--whats" href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank" rel="noopener">
+        <a class="chip chip--whats"
+          href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+          rel="noopener">
           <span aria-hidden="true" class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z" fill="#666666"/>
+              <path
+                d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                fill="#666666" />
             </svg>
           </span>
           WhatsApp
@@ -432,7 +525,6 @@
       <div class="container footer__bottom-content">
         <small>© 2025 Vero Internet.</small>
         <div class="footer__links">
-          <a href="#termos">Termos de uso</a>
           <a href="#politica">Política de privacidade</a>
         </div>
       </div>
@@ -444,7 +536,9 @@
     <span class="sr-only">Fale com a Vero no WhatsApp</span>
     <span aria-hidden="true" class="whatsapp__icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20" fill="none">
-        <path d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z" fill="#FFFFFF"/>
+        <path
+          d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+          fill="#FFFFFF" />
       </svg>
     </span>
   </a>

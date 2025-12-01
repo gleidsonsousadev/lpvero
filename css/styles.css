@@ -19,56 +19,12 @@ body {
 .site-header__logo img {
 	width: 120px;
 }
-.site-header__city {
-	display: flex;
-	align-items: center;
-	gap: 1.2rem;
-	background: #e14983;
-	padding: 0.55rem 1.1rem;
-	border-radius: 30px;
-}
-.site-header__city-info {
-	display: flex;
-	flex-direction: column;
-	line-height: 1.1;
-	color: #fff;
-}
-.site-header__city-info strong {
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.03em;
-}
-.site-header__city-label {
-	font-size: 0.7rem;
-	text-transform: uppercase;
-	letter-spacing: 0.15em;
-	color: #ffd31b;
-	font-weight: 600;
-}
-.site-header__change {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.6rem;
-	background: #ffd31b;
-	color: #666;
-	font-weight: 700;
-	border: none;
-	border-radius: 999px;
-	padding: 0.65rem 1.4rem;
-	font-size: 0.85rem;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
-	cursor: pointer;
-	transition: var(--transition);
-	box-shadow: none;
-}
-.site-header__change .icon {
-	padding: 0;
-}
-.site-header__change:hover {
-	transform: translateY(-1px);
-}
 .site-header__cta {
+	display: flex;
+	gap: 0.9rem;
+	align-items: center;
+}
+.site-header__cta-inner {
 	display: flex;
 	gap: 0.9rem;
 	align-items: center;
@@ -365,7 +321,7 @@ body {
 }
 
 .plan-card__price {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	display: inline-flex;
 	align-items: baseline;
 	gap: 0.35rem;
@@ -427,7 +383,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 1.8rem;
-	align-items: center;
+	align-items: stretch;
 }
 .plan-card {
 	display: flex;
@@ -437,7 +393,7 @@ body {
 	background: #d63066;
 	color: #fff;
 	border-radius: 32px;
-	height: fit-content;
+	height: 100%;
 }
 .plan-card h3 {
 	font-size: 1.6rem;
@@ -466,9 +422,23 @@ body {
 	font-size: 0.85rem;
 }
 .plan-card__price {
-	font-size: 2.5rem;
-
+	font-size: 2rem;
 	color: #fff;
+}
+.plan-card__price-block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.2rem;
+	margin-bottom: 1rem;
+}
+.plan-card__price-meta {
+	font-size: 1rem;
+	text-transform: lowercase;
+	color: rgba(255, 255, 255, 0.85);
+}
+.plan-card__price-meta--light {
+	color: #9d9d9d;
 }
 .plan-card__price-old {
 	display: block;
@@ -501,6 +471,10 @@ body {
 	color: #7c2145;
 }
 .plan-card--featured .plan-card__price {
+	color: #8b0038;
+	font-size: 2rem;
+}
+.plan-card--featured .plan-card__price-meta {
 	color: #8b0038;
 }
 .plan-card--featured .plan-card__badge {
@@ -989,7 +963,7 @@ body {
 	color: #4e4e58;
 }
 .accordion__item.is-open .accordion__panel {
-	max-height: 400px;
+	max-height: 1000px;
 	padding: 1rem 1.6rem 1.2rem;
 	border-color: #a7b1ff;
 }
@@ -1174,130 +1148,6 @@ body {
 		transform: translateY(0);
 	}
 }
-.city-modal {
-	position: fixed;
-	inset: 0;
-	background: rgba(17, 0, 8, 0.75);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 1.5rem;
-	opacity: 0;
-	pointer-events: none;
-	transition: var(--transition);
-	z-index: 2000;
-}
-.city-modal.is-active {
-	opacity: 1;
-	pointer-events: auto;
-}
-.city-modal__overlay {
-	position: absolute;
-	inset: 0;
-}
-.city-modal__box {
-	position: relative;
-	background: #fff;
-	border-radius: 24px;
-	padding: 2rem;
-	max-width: 420px;
-	width: 100%;
-	z-index: 2;
-	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
-}
-.city-modal__close {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	background: transparent;
-	border: none;
-	font-size: 1.8rem;
-	line-height: 1;
-	color: var(--color-rosa-vero);
-	cursor: pointer;
-}
-.city-modal h2 {
-	margin-bottom: 0.5rem;
-	color: var(--color-bordo-escuro);
-}
-.city-modal form {
-	display: flex;
-	flex-direction: column;
-	gap: 0.75rem;
-	margin: 1.5rem 0 0;
-}
-.city-modal__search input {
-	width: 100%;
-	border: 2px solid #a8a8a0;
-	border-radius: 24px;
-	padding: 0.85rem 1.1rem;
-	font-size: 1rem;
-	color: var(--color-grafite);
-	transition: var(--transition);
-	outline: none;
-}
-.city-modal__search input:focus {
-	border-color: var(--color-rosa-vero);
-}
-.city-modal__divider {
-	border: none;
-	border-top: 1px solid #d8d8d0;
-	margin: 1rem 0 0.75rem;
-}
-.city-modal__subtitle {
-	font-size: 0.95rem;
-	color: var(--color-grafite);
-	margin-bottom: 0.4rem;
-	display: none;
-}
-.city-modal__subtitle.is-visible {
-	display: block;
-}
-.city-modal__results {
-	display: none;
-	flex-direction: column;
-	gap: 0.65rem;
-	margin-bottom: 1rem;
-}
-.city-modal__results.is-visible {
-	display: flex;
-}
-.city-modal__option {
-	display: flex;
-	align-items: center;
-	gap: 0.65rem;
-	border: 2px solid #c7c7bd;
-	border-radius: 22px;
-	padding: 0.6rem 0.95rem;
-	font-weight: 600;
-	color: var(--color-grafite);
-	cursor: pointer;
-	transition: var(--transition);
-}
-.city-modal__option:hover,
-.city-modal__option:focus-within {
-	border-color: var(--color-rosa-vero);
-}
-.city-modal__option input {
-	width: 1.1rem;
-	height: 1.1rem;
-	margin: 0;
-	accent-color: var(--color-rosa-vero);
-}
-.city-modal__submit {
-	width: 100%;
-	background: #ffd31b;
-	color: #666;
-	font-weight: 700;
-	text-transform: uppercase;
-	border-radius: 999px;
-}
-.city-modal__feedback {
-	min-height: 1.2rem;
-	color: var(--color-rosa-vero);
-	font-weight: 600;
-	text-align: center;
-}
 body.modal-open {
 	overflow: hidden;
 }
@@ -1437,30 +1287,27 @@ body.modal-open {
 		grid-column: span 1;
 	}
 	.site-header__cta {
-		flex-direction: column;
-		align-items: stretch;
 		width: 100%;
 	}
-	.site-header__city {
-		flex-direction: column;
-		align-items: center;
-		gap: 0.7rem;
-		text-align: center;
-		padding: 0.45rem 0.9rem;
-		border-radius: 24px;
+	.site-header__cta-inner {
+		width: 100%;
+		display: flex;
+		gap: 0.75rem;
+		justify-content: space-between;
 	}
-	.site-header__city-info strong {
+	.site-header__cta-inner .chip {
+		flex: 1 1 50%;
 		font-size: 0.8rem;
+		padding: 0.55rem 0.8rem;
+		gap: 0.4rem;
 	}
+	.site-header__cta-inner .chip .icon {
+		width: 0.85rem;
+		height: 0.85rem;
+	}
+	.site-header__city,
 	.site-header__change {
-		width: 100%;
-		justify-content: center;
-		font-size: 0.75rem;
-		padding: 0.35rem 0.7rem;
-	}
-	.site-header__change .icon {
-		width: 1rem;
-		height: 1rem;
+		display: none;
 	}
 	.footer__actions {
 		width: 100%;
@@ -1475,13 +1322,11 @@ body.modal-open {
 		justify-content: center;
 		text-align: center;
 	}
+	.site-header__cta-inner .chip {
+		width: auto;
+	}
 	.hero__actions {
 		width: 100%;
-	}
-	.site-header__city,
-	.site-header__change {
-		width: 100%;
-		margin: 0;
 	}
 	.whatsapp {
 		right: 1rem;
