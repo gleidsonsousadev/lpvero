@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Vero Internet Fibra Óptica - Planos de Internet Rápida | [Cidade]</title>
-  <meta name="description" content="Internet fibra óptica de verdade com velocidade real, suporte humanizado e instalação grátis. Conheça os planos Vero e tenha a melhor internet da sua região.">
-  <meta name="keywords" content="internet fibra óptica, planos de internet, internet rápida, vero internet, fibra óptica [cidade]">
+  <meta name="description"
+    content="Internet fibra óptica de verdade com velocidade real, suporte humanizado e instalação grátis. Conheça os planos Vero e tenha a melhor internet da sua região.">
+  <meta name="keywords"
+    content="internet fibra óptica, planos de internet, internet rápida, vero internet, fibra óptica [cidade]">
   <meta property="og:title" content="Vero - Internet de Verdade">
   <meta property="og:description" content="Internet fibra óptica com velocidade real">
   <meta property="og:image" content="https://verointernet.com.br/assets/vero-og-image.jpg">
@@ -14,22 +17,50 @@
   <meta name="theme-color" content="#D5306D">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+    media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="preload" href="css/styles.css" as="style">
-  <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
-    :root{--color-rosa-vero:#D5306D;--color-laranja:#F39F3F;--color-amarelo:#FFE51B;--color-bordo-escuro:#8B0038;--color-bordo:#C1394F;--color-rosa-claro:#FA6D91;--color-branco:#FFFFFF;--color-cinza-1:#ECECEC;--color-cinza-2:#D3D3D0;--color-cinza-3:#9D9D90;--color-grafite:#606066;--color-azul:#29377F;--radius:16px;--shadow:0 20px 60px rgba(213,48,109,.2);--transition:all .3s cubic-bezier(.4,0,.2,1)}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Inter',sans-serif;color:var(--color-grafite);background-color:var(--color-branco);line-height:1.6;overflow-x:hidden}
-    img{max-width:100%;display:block}
-    .hero{background:radial-gradient(circle at top right,#FA6D91 0%,#D5306D 45%,#8B0038 100%);color:#fff;position:relative;padding:1rem 0 5rem;min-height:100vh}
-    .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12);animation:float 12s infinite linear}
-    .hero::before{width:220px;height:220px;top:10%;left:-60px}
-    .hero::after{width:320px;height:320px;bottom:-80px;right:-120px}
-    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(30px) scale(1.05)}100%{transform:translateY(0)}}
+    :root {
+      --color-rosa-vero: #D5195F;
+      --color-laranja: #F3953F;
+      --color-amarelo: #FFD31B;
+      --color-bordo-escuro: #8B0038;
+      --color-bordo: #C1394F;
+      --color-rosa-claro: #FA6D91;
+      --color-branco: #FFFFFF;
+      --color-cinza-1: #ECECEC;
+      --color-cinza-2: #D3D3D0;
+      --color-cinza-3: #9D9D90;
+      --color-grafite: #606066;
+      --color-azul: #29377F;
+      --radius: 16px;
+      --shadow: 0 20px 60px rgba(213, 48, 109, .2);
+      --transition: all .3s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--color-grafite);
+      background-color: var(--color-branco);
+      overflow-x: hidden
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -46,208 +77,284 @@
   }
   </script>
 </head>
+
 <body>
-  <header class="hero" id="inicio">
-    <div class="container">
-      <nav class="hero__nav" aria-label="Principal">
-        <a href="#inicio" class="hero__logo" aria-label="Página inicial Vero">
-          <img src="images/logo-vero.svg" alt="Vero Internet" width="136" height="44">
-        </a>
-        <button class="hero__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="hero__menu" id="primary-menu" role="menubar">
-          <li role="none"><a role="menuitem" href="#beneficios">Benefícios</a></li>
-          <li role="none"><a role="menuitem" href="#planos">Planos</a></li>
-          <li role="none"><a role="menuitem" href="#diferenciais">Diferenciais</a></li>
-          <li role="none"><a role="menuitem" href="#depoimentos">Clientes</a></li>
-          <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
-          <li role="none"><a role="menuitem" class="btn btn--outline" href="#contato">Contratar</a></li>
-        </ul>
-      </nav>
-      <div class="hero__grid">
-        <div class="hero__content" data-aos="fade-up" data-aos-duration="700">
-          <p class="hero__eyebrow">Fibra óptica 100% real</p>
-          <h1>Internet de verdade para quem vive de verdade</h1>
-          <p class="hero__subtitle">Conecte sua casa ou empresa com estabilidade máxima, suporte humanizado e instalação grátis em até 48h.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#planos">Quero Vero agora</a>
-            <a class="btn btn--ghost" href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank" rel="noopener">Falar com especialista</a>
-          </div>
-          <form id="cep-form" class="hero__form" novalidate>
-            <label for="cep" class="sr-only">Consultar disponibilidade pelo CEP</label>
-            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" inputmode="numeric" aria-label="Digite seu CEP" required>
-            <button type="submit" class="btn btn--secondary" aria-live="polite">Consultar</button>
-            <div class="hero__feedback" role="status" aria-live="polite"></div>
-          </form>
-        </div>
-        <div class="hero__media" data-aos="fade-left" data-aos-duration="700">
-          <picture>
-            <source data-srcset="images/hero-bg.webp" type="image/webp">
-            <img data-src="images/hero-bg.jpg" alt="Família conectada com internet fibra" width="480" height="520" class="lazy">
-          </picture>
-          <div class="hero__badge">
-            <strong>+650 cidades</strong>
-            <p>com cobertura Vero</p>
-          </div>
+  <header class="site-header" aria-label="Menu fixo">
+    <div class="container site-header__content">
+      <a href="#inicio" class="site-header__logo" aria-label="Página inicial Vero">
+        <img src="images/logo-vero.svg" alt="Vero Internet" width="110" height="36">
+      </a>
+      <div class="site-header__cta">
+        <div class="site-header__cta-inner">
+          <a class="chip chip--phone" href="tel:08007200200">
+            <span aria-hidden="true" class="icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            0800 720 0200
+          </a>
+          <a class="chip chip--whats"
+            href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+            rel="noopener">
+            <span aria-hidden="true" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                  fill="#666666" />
+              </svg>
+            </span>
+            WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section id="beneficios" class="section section--light" aria-label="Benefícios Vero">
+    <section class="hero" id="inicio">
       <div class="container">
-        <header class="section__header" data-aos="fade-up">
-          <p class="eyebrow">Por que escolher a Vero?</p>
-          <h2>Benefícios que fazem a diferença no seu dia a dia</h2>
-          <p>Nós cuidamos da sua conexão para você focar no que importa.</p>
+        <div class="hero__body">
+          <div class="hero__content" data-aos="fade-right" data-aos-duration="700">
+            <h1>Internet Fibra,<br><span>conexão do tamanho do seu mundo.</span></h1>
+            <p class="hero__subtitle">Seu mundo com as melhores ofertas e filmes pra você maratonar.</p>
+            <div class="hero__actions">
+              <a class="btn hero__cta-primary" href="#planos">Ver Planos Disponíveis</a>
+              <a class="chip chip--phone-secondary" href="tel:08007200200">
+                <span aria-hidden="true" class="icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      stroke="#666" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                0800 720 0200
+              </a>
+            </div>
+          </div>
+          <div class="hero__media" data-aos="fade-left" data-aos-duration="700">
+            <img src="images/img-hero.png" alt="Clientes conectados com internet Vero" width="640" height="480"
+              class="hero__figure hero__figure--full" loading="eager" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="beneficios" class="section benefits" aria-label="Benefícios Vero">
+      <div class="container">
+        <header class="benefits__header" data-aos="fade-up">
+          <p class="benefits__tag">O que você leva</p>
+          <h2 class="benefits__title">Benefícios que fazem a diferença no seu dia a dia</h2>
+          <p class="benefits__subtitle">Nós cuidamos da sua conexão para você focar no que importa.</p>
         </header>
         <div class="benefits__grid">
-          <article class="benefit-card" data-aos="fade-up" data-aos-delay="0">
-            <img src="images/icons/speed.svg" alt="Ícone velocidade" width="64" height="64" loading="lazy">
-            <h3>Velocidade real</h3>
-            <p>Fibra óptica ponta a ponta com velocidades simétricas e ping ultrabaixo.</p>
+          <article class="benefit-card" data-aos="fade-up">
+            <img src="images/icons/icon-velocidade-real.svg" alt="Ícone velocidade real" width="56" height="56"
+              loading="lazy">
+            <div class="benefit-card__text">
+              <h3>Velocidade Real</h3>
+              <p>Fibra óptica ponta a ponta com velocidades simétricas e ping ultrabaixo.</p>
+            </div>
           </article>
-          <article class="benefit-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/icons/support.svg" alt="Ícone suporte" width="64" height="64" loading="lazy">
-            <h3>Suporte humanizado</h3>
-            <p>Atendimento 24/7 com especialistas que resolvem seu problema no primeiro contato.</p>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="120">
+            <img src="images/icons/icon-suporte-humanizado.svg" alt="Ícone suporte humanizado" width="56" height="56"
+              loading="lazy">
+            <div class="benefit-card__text">
+              <h3>Suporte Humanizado</h3>
+              <p>Atendimento 24/7 com especialistas que resolvem seu problema no primeiro contato.</p>
+            </div>
           </article>
-          <article class="benefit-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/icons/install.svg" alt="Ícone instalação" width="64" height="64" loading="lazy">
-            <h3>Instalação grátis</h3>
-            <p>Agendamento rápido, equipe própria e roteador Wi-Fi 6 incluso no plano.</p>
+          <article class="benefit-card" data-aos="fade-up" data-aos-delay="240">
+            <img src="images/icons/icon-instalacao-gratis.svg" alt="Ícone instalação grátis" width="56" height="56"
+              loading="lazy">
+            <div class="benefit-card__text">
+              <h3>Instalação Grátis</h3>
+              <p>Agendamento rápido, equipe própria e roteador Wi-Fi 6 incluso no plano.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="planos" class="section section--dark" aria-label="Planos e preços">
+    <section id="planos" class="section plans" aria-label="Planos e preços">
       <div class="container">
-        <header class="section__header" data-aos="fade-up">
-          <p class="eyebrow">Planos do seu tamanho</p>
-          <h2>Escolha a velocidade perfeita</h2>
-          <p>Instalação gratuita e sem fidelidade nos planos residenciais.</p>
+        <header class="plans__header" data-aos="fade-up">
+          <p class="plans__tag">Planos do seu tamanho</p>
+          <h2 class="plans__title">Escolha a velocidade perfeita!</h2>
+          <p class="plans__subtitle">Instalação gratuita e sem fidelidade nos planos residenciais.</p>
         </header>
         <div class="plans__grid">
-          <article class="plan-card" data-aos="fade-up">
-            <span class="plan-card__badge">Residencial</span>
-            <h3>300 Mega</h3>
-            <p>Ideal para quem ama streaming em 4K.</p>
-            <strong class="plan-card__price"><small>R$</small> 109<small>,90/mês</small></strong>
+          <article class="plan-card plan-card--residencial" data-aos="fade-up">
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>480 Mega</h3>
+            <span class="plan-card__divider plan-card__divider--light" aria-hidden="true"></span>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 113,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
             <ul>
-              <li>Upload 300 Mega</li>
-              <li>Wi-Fi 6 incluso</li>
-              <li>App de gerenciamento</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Alta Velocidade</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 5</li>
             </ul>
-            <a class="btn btn--primary" href="#contato">Assinar agora</a>
+            <a class="plan-card__btn" href="#contato">Assinar</a>
+          </article>
+          <article class="plan-card plan-card--residencial" data-aos="fade-up">
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>750 Mega</h3>
+            <span class="plan-card__divider" aria-hidden="true"></span>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 122,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
+            <ul>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Alta Velocidade</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
+            </ul>
+            <a class="plan-card__btn" href="#contato">Assinar</a>
           </article>
           <article class="plan-card plan-card--featured" data-aos="zoom-in">
             <span class="plan-card__badge plan-card__badge--highlight">Recomendado</span>
-            <h3>600 Mega</h3>
-            <p>Para casas conectadas e gamers exigentes.</p>
-            <strong class="plan-card__price"><small>R$</small> 139<small>,90/mês</small></strong>
+            <h3>800 Mega</h3>
+            <span class="plan-card__divider plan-card__divider--light" aria-hidden="true"></span>
+            <div class="plan-card__prices">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 130,00</strong>
+              <span class="plan-card__price-meta plan-card__price-meta--light">por mês</span>
+            </div>
             <ul>
-              <li>Upload 600 Mega</li>
-              <li>Wi-Fi 6 + repetidor</li>
-              <li>Priority support</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Globoplay</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Youtube Premium</li>
+              <li><img src="images/icons/icon-check-laranja.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
             </ul>
-            <a class="btn btn--secondary" href="#contato">Quero esse plano</a>
+            <a class="plan-card__btn" href="#contato">Quero esse plano</a>
           </article>
-          <article class="plan-card" data-aos="fade-up">
-            <span class="plan-card__badge">Empresas</span>
-            <h3>1 Giga</h3>
-            <p>Conexão dedicada e monitoramento ativo.</p>
-            <strong class="plan-card__price"><small>R$</small> 299<small>,90/mês</small></strong>
+          <article class="plan-card plan-card--empresas" data-aos="fade-up">
+            <span class="plan-card__badge">Internet Fibra</span>
+            <h3>800 Mega</h3>
+            <span class="plan-card__divider" aria-hidden="true"></span>
+            <div class="plan-card__price-block">
+              <span class="plan-card__price-meta">a partir de</span>
+              <strong class="plan-card__price">R$ 150,00</strong>
+              <span class="plan-card__price-meta">por mês</span>
+            </div>
             <ul>
-              <li>IP fixo incluso</li>
-              <li>Suporte em até 2h</li>
-              <li>Consultoria de segurança</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Premiere</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Futebol</li>
+              <li><img src="images/icons/icon-check-branco.svg" alt="" width="18" height="18">Wi-Fi 6 incluso</li>
             </ul>
-            <a class="btn btn--primary" href="#contato">Falar com especialista</a>
+            <a class="plan-card__btn" href="#contato">Assinar</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="diferenciais" class="section" aria-label="Diferenciais competitivos">
+    <section class="wifi" aria-label="Wi-Fi 6">
       <div class="container">
-        <header class="section__header" data-aos="fade-up">
-          <p class="eyebrow">Tecnologia proprietária</p>
-          <h2>Infraestrutura que garante estabilidade e performance</h2>
-        </header>
-        <div class="differentials">
-          <article class="differential" data-aos="fade-right">
-            <div class="differential__media">
-              <img data-src="images/placeholders/network.webp" alt="Tecnologia de rede" width="520" height="320" class="lazy">
-            </div>
-            <div class="differential__content">
-              <h3>Backbone próprio</h3>
-              <p>Rede capilar robusta com redundância tripla, garantindo disponibilidade acima de 99,9%.</p>
-              <ul>
-                <li>Monitoramento 24/7 com IA</li>
-                <li>Peering direto com os principais provedores de conteúdo</li>
-              </ul>
-            </div>
-          </article>
-          <article class="differential" data-aos="fade-left">
-            <div class="differential__content">
-              <h3>Experiência premium</h3>
-              <p>Equipe local com treinamentos constantes e NPS acima de 80 pontos.</p>
-              <ul>
-                <li>Instalação agendada em janelas de 2h</li>
-                <li>Aplicativo completo para acompanhar consumo e suporte</li>
-              </ul>
-            </div>
-            <div class="differential__media">
-              <img data-src="images/placeholders/support.webp" alt="Equipe Vero" width="520" height="320" class="lazy">
-            </div>
-          </article>
+        <div class="wifi__card" data-aos="fade-up">
+          <div>
+            <p class="wifi__badge">Tecnológico</p>
+            <h2 class="wifi__title">Wi-Fi 6: tecnologia que transforma sua experiência</h2>
+            <p class="wifi__text">Velocidade superior, menor latência e conexão estável mesmo com vários dispositivos
+              ligados.</p>
+            <ul class="wifi__benefits">
+              <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Mais velocidade</li>
+              <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Menos interferência</li>
+              <li><img src="images/icons/icon-check-rosa.svg" alt="" width="18" height="18">Ideal para streaming e games
+              </li>
+            </ul>
+          </div>
+          <div class="wifi__media">
+            <img src="images/img-wifi.png" alt="Dispositivos conectados via Wi-Fi 6" width="520" height="320"
+              loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="depoimentos" class="section section--light" aria-label="Depoimentos de clientes">
+    <section class="cashback" aria-label="Cashback Vero">
       <div class="container">
-        <header class="section__header" data-aos="fade-up">
-          <p class="eyebrow">Social proof</p>
-          <h2>Quem tem Vero recomenda</h2>
+        <div class="cashback__card" data-aos="fade-up">
+          <div class="cashback__media">
+            <img src="images/img-cashback.png" alt="Smartphone com cashback" width="520" height="320" loading="lazy">
+          </div>
+          <div class="cashback__content">
+            <h2>Ganhe Cashback pagando sua fatura em dia!</h2>
+            <p>Ao pagar sua primeira fatura em dia, você recebe créditos Vibes equivalentes ao valor mensal para trocar
+              por benefícios, descontos e vantagens exclusivas.</p>
+            <a class="cashback__btn" href="#contato">Saiba como funciona</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Por que escolher a Vero">
+      <div class="container">
+        <header class="metrics__header" data-aos="fade-up">
+          <p class="metrics__eyebrow">Por que escolher a Vero?</p>
+          <h2 class="metrics__title">Vero é referência em internet fibra e atendimento ao cliente.</h2>
         </header>
-        <div class="testimonials" data-aos="zoom-in">
-          <article class="testimonial">
-            <img src="images/placeholders/user-1.svg" alt="Foto Maria" width="80" height="80" loading="lazy">
-            <div class="testimonial__stars" aria-label="5 estrelas">
-              <span>★★★★★</span>
-            </div>
-            <p>“Internet estável. Trabalho com reuniões o dia inteiro e nunca mais perdi um call.”</p>
-            <strong>Maria Silva</strong>
-            <small>Belo Horizonte - MG</small>
+        <div class="metrics__grid">
+          <article class="metrics__card" data-aos="fade-up">
+            <img class="metrics__icon" src="images/icons/icon-cifrao.svg" alt="Ícone de investimento" width="96"
+              height="96" loading="lazy">
+            <h3 class="metrics__value">1,3M</h3>
+            <p class="metrics__description">Mais de 1,3 milhão de clientes satisfeitos</p>
           </article>
-          <article class="testimonial">
-            <img src="images/placeholders/user-2.svg" alt="Foto Rodrigo" width="80" height="80" loading="lazy">
-            <div class="testimonial__stars" aria-label="5 estrelas">
-              <span>★★★★★</span>
-            </div>
-            <p>“Atendimento muito rápido e instalação impecável. Recomendo para toda a família.”</p>
-            <strong>Rodrigo Araújo</strong>
-            <small>Blumenau - SC</small>
+          <article class="metrics__card" data-aos="fade-up" data-aos-delay="100">
+            <img class="metrics__icon" src="images/icons/icon-atendimento.svg" alt="Ícone de suporte" width="96"
+              height="96" loading="lazy">
+            <h3 class="metrics__value">24/7</h3>
+            <p class="metrics__description">Atendimento e suporte 24/7</p>
           </article>
-          <article class="testimonial">
-            <img src="images/placeholders/user-3.svg" alt="Foto Camila" width="80" height="80" loading="lazy">
-            <div class="testimonial__stars" aria-label="5 estrelas">
-              <span>★★★★★</span>
-            </div>
-            <p>“Upgrade para 600 mega fez toda diferença nos jogos e streaming simultâneo.”</p>
-            <strong>Camila Prado</strong>
-            <small>Passo Fundo - RS</small>
+          <article class="metrics__card" data-aos="fade-up" data-aos-delay="200">
+            <img class="metrics__icon" src="images/icons/icon-certificado.svg" alt="Ícone de certificado" width="96"
+              height="96" loading="lazy">
+            <h3 class="metrics__value">RA1000</h3>
+            <p class="metrics__description">Certificado RA1000 Reclame Aqui</p>
+            <img src="images/certificado-ra1000.png" alt="Certificado RA1000" class="metrics__seal" width="150"
+              height="60" loading="lazy">
           </article>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section" aria-label="Perguntas frequentes">
+    <section class="ready-cta" aria-label="Pronto para mudar sua internet?">
+      <div class="container">
+        <div class="ready-cta__box" data-aos="fade-up">
+          <h2>Pronto para mudar sua internet?</h2>
+          <p>Escolha seu plano agora e fale com um dos nossos especialistas.</p>
+          <div class="ready-cta__actions">
+            <a class="ready-cta__btn ready-cta__btn--primary" href="#planos">Assinar agora</a>
+            <a class="ready-cta__btn ready-cta__btn--whats"
+              href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+              rel="noopener">
+              <span aria-hidden="true" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                    fill="#8B0038" />
+                </svg>
+              </span>
+              Falar no WhatsApp
+            </a>
+            <a class="ready-cta__btn ready-cta__btn--outline" href="tel:08007200200">
+              <span aria-hidden="true" class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    stroke="#FFD31B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              0800 721 0066
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq" aria-label="Perguntas frequentes">
       <div class="container">
         <header class="section__header" data-aos="fade-up">
           <p class="eyebrow">FAQ</p>
@@ -256,101 +363,194 @@
         <div class="accordion" role="tablist">
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Quanto tempo leva para instalar?</span>
+              <span>Como que funciona os 6 meses de Cashback?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>A instalação ocorre em até 48h após confirmação do pedido e é totalmente gratuita.</p>
+              <p>Pagando as 6 primeiras mensalidades em dia você ganha mensalmente um cashback do valor do plano em
+                Créditos Vibe. Ou seja, a cada mensalidade que você pagar em dia, a Vero vai liberar seu cashback em
+                créditos Vibe no valor da mensalidade. Os créditos poderão ser visualizados e utilizados em ofertas e
+                recompensas. A primeira mensalidade será considerada pós instalação.</p>
             </div>
           </article>
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Existe fidelidade?</span>
+              <span>Quais as formas de pagamento aceitas?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>Planos residenciais não possuem fidelidade. Já os corporativos podem ter condições especiais mediante contrato.</p>
+              <p>Nossas formas de pagamento são débito automático, cartão de crédito, boleto e PIX, e você ainda escolhe
+                a data de vencimento que melhor te atende.</p>
             </div>
           </article>
           <article class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Como funciona o suporte?</span>
+              <span>A banda larga possui limite de dados?</span>
               <span class="accordion__icon" aria-hidden="true"></span>
             </button>
             <div class="accordion__panel" role="region">
-              <p>Suporte 24/7 via app, telefone e WhatsApp com equipes locais treinadas.</p>
+              <p>Diferentemente de um pacote de dados, onde o usuário possui um limite de dados para ser consumido, a
+                banda larga tem uma faixa de transmissão de dados que permite a conexão de maneira contínua, sem
+                interrupções.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que tem além da internet nas ofertas da Vero?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Nossa proposta de valor é entregar tudo o que você precisa em velocidade, qualidade, e conteúdos
+                premium. Além de ser referência em internet, contamos com equipes preparadas para atender você no que
+                precisar. Temos ofertas com serviços de literatura como o Vero Livros, conteúdos exclusivos para
+                clientes com o Vero Vídeo além das parcerias com a Globoplay, Premiere, Telecine, HBO Max, e Youtube
+                Premium.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é o Wi-Fi 6?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>O Wi-Fi 6 é mais recente tecnologia em rede sem fio, proporcionando mais velocidade, e menor latência
+                de sinal (intervalo de transmissão de sinal).</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Todos os planos possuem Wi-Fi 6 sem custo adicional?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Sim, isso é uma exclusividade dos novos planos da Vero. Afinal, internet pra nós é um assunto sério e,
+                para oferecer uma experiência superior, temos o melhor da tecnologia em internet na sua casa e empresa.
+              </p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +FILMES?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de filmes pensando em quem não quer perder nada do mundo do cinema! Cerca de 47 canais ao Vivo,
+                sendo eles conteúdos de TV aberta e conteúdo dos canais telecine como Premium, Action e FUN.</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +ESPORTES?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de canais variados, com todo conteúdo do esporte centralizado em um só local! Cerca de 68 canais
+                ao vivo, sendo eles conteúdos de TV aberta e canais específicos para amantes do esporte, com todos os
+                canais Premiere, todos os canais da ESPN e SPORTV!</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O que é Vero vídeo +DIVERSÃO?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Pacote de canais para quem não quer perder nada! Cerca de 74 canais ao vivo, sendo eles conteúdos de TV
+                aberta e conteúdo para todos os gostos com canais de Filmes, Esportes e variedades. Assista Telecine,
+                universo ESPN e HBO Max em um só lugar!</p>
+            </div>
+          </article>
+          <article class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Como faço para ter acesso ao Youtube Premium?</span>
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion__panel" role="region">
+              <p>Com o Youtube Premium, além de aproveitar os seus vídeos favoritos sem anúncios, poderá realizar
+                downloads para assistir offline sem precisar de internet e ainda economiza seus dados móveis em
+                dispositivos portáteis.</p>
+              <p>É só vantagens: tem reprodução em segundo plano, acessos aos apps Youtube Music com um acervo de mais
+                de 100 milhões de músicas e Youtube Kids, tendo conteúdos exclusivos infantis com segurança.</p>
+              <p>Caso o seu plano Vero possua o serviço Youtube Premium:</p>
+              <ol>
+                <li>Ative a assinatura através do site/app "Minha Vero" pela área do cliente;</li>
+                <li>Você será redirecionado para o ambiente do Google, onde poderá entrar com uma conta Google já
+                  existente ou cadastrar uma nova (após vinculação desse e-mail não será possível trocá-lo);</li>
+                <li>Após o acesso da conta, a assinatura será feita e a confirmação aparecerá na tela;</li>
+                <li>Acesse o site Youtube ou baixe os apps Youtube, Youtube Music e Youtube Kids para aproveitar os
+                  conteúdos disponíveis na sua assinatura.</li>
+              </ol>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section section--gradient" aria-label="Entre em contato">
-      <div class="container">
-        <div class="cta-final" data-aos="zoom-in">
-          <div>
-            <p class="eyebrow">Pronto para mudar?</p>
-            <h2>Garanta a melhor internet da sua cidade</h2>
-            <p>Preencha o formulário e nosso time retorna em até 15 minutos.</p>
-          </div>
-          <form id="lead-form" novalidate>
-            <label class="sr-only" for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
-            <label class="sr-only" for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="E-mail profissional" required>
-            <label class="sr-only" for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
-            <input type="text" id="empresa" name="empresa" placeholder="Empresa (opcional)">
-            <input type="text" id="honeypot" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
-            <button type="submit" class="btn btn--primary">Receber proposta</button>
-            <p class="form__feedback" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
-      <div>
+    <div class="container footer__content">
+      <div class="footer__brand">
         <img src="images/logo-vero.svg" alt="Logo Vero" width="120" height="40">
-        <p>Conectamos pessoas e negócios com tecnologia de ponta e atendimento próximo.</p>
-        <div class="footer__badges">
-          <span>Selo ANATEL</span>
-          <span>LGPD Ready</span>
-        </div>
+        <p class="footer__legal">Consulte disponibilidade e condições na sua região. Ofertas sujeitas à análise técnica.
+        </p>
       </div>
-      <div>
-        <h3>Contato</h3>
-        <ul>
-          <li><a href="tel:08007200200">0800 720 0200</a></li>
-          <li><a href="mailto:contato@verointernet.com.br">contato@verointernet.com.br</a></li>
-          <li>Av. das Américas, 400 - Belo Horizonte</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Redes</h3>
-        <ul>
-          <li><a href="https://www.instagram.com/verointernet" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/verointernet" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/company/verointernet" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
+      <div class="footer__actions">
+        <a class="chip chip--phone" href="tel:08007200200">
+          <span aria-hidden="true" class="icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                stroke="#FFE51B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          0800 720 0200
+        </a>
+        <a class="chip chip--whats"
+          href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank"
+          rel="noopener">
+          <span aria-hidden="true" class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+                fill="#666666" />
+            </svg>
+          </span>
+          WhatsApp
+        </a>
       </div>
     </div>
     <div class="footer__bottom">
-      <small>© <span id="year"></span> Vero Internet. Todos os direitos reservados.</small>
-      <a href="#inicio">Voltar ao topo</a>
+      <div class="container footer__bottom-content">
+        <div class="footer__links">
+          <a href="politica-privacidade.html">Política de privacidade</a>
+        </div>
+        <small>© 2025 Vero Internet.</small>
+      </div>
     </div>
   </footer>
 
-  <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero" target="_blank" rel="noopener" aria-label="Fale com a Vero no WhatsApp">
-    <span>WhatsApp</span>
+  <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5531999999999&text=Quero%20assinar%20a%20Vero"
+    target="_blank" rel="noopener">
+    <span class="sr-only">Fale com a Vero no WhatsApp</span>
+    <span aria-hidden="true" class="whatsapp__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 20 20" fill="none">
+        <path
+          d="M17 2.91005C16.0831 1.98416 14.991 1.25002 13.7875 0.750416C12.584 0.250812 11.2931 -0.00426317 9.99 5.38951e-05C4.53 5.38951e-05 0.0800002 4.45005 0.0800002 9.91005C0.0800002 11.6601 0.54 13.3601 1.4 14.8601L0 20.0001L5.25 18.6201C6.7 19.4101 8.33 19.8301 9.99 19.8301C15.45 19.8301 19.9 15.3801 19.9 9.92005C19.9 7.27005 18.87 4.78005 17 2.91005ZM9.99 18.1501C8.51 18.1501 7.06 17.7501 5.79 17.0001L5.49 16.8201L2.37 17.6401L3.2 14.6001L3 14.2901C2.17755 12.9771 1.74092 11.4593 1.74 9.91005C1.74 5.37005 5.44 1.67005 9.98 1.67005C12.18 1.67005 14.25 2.53005 15.8 4.09005C16.5676 4.85392 17.1759 5.7626 17.5896 6.76338C18.0033 7.76417 18.2142 8.83714 18.21 9.92005C18.23 14.4601 14.53 18.1501 9.99 18.1501ZM14.51 11.9901C14.26 11.8701 13.04 11.2701 12.82 11.1801C12.59 11.1001 12.43 11.0601 12.26 11.3001C12.09 11.5501 11.62 12.1101 11.48 12.2701C11.34 12.4401 11.19 12.4601 10.94 12.3301C10.69 12.2101 9.89 11.9401 8.95 11.1001C8.21 10.4401 7.72 9.63005 7.57 9.38005C7.43 9.13005 7.55 9.00005 7.68 8.87005C7.79 8.76005 7.93 8.58005 8.05 8.44005C8.17 8.30005 8.22 8.19005 8.3 8.03005C8.38 7.86005 8.34 7.72005 8.28 7.60005C8.22 7.48005 7.72 6.26005 7.52 5.76005C7.32 5.28005 7.11 5.34005 6.96 5.33005H6.48C6.31 5.33005 6.05 5.39005 5.82 5.64005C5.6 5.89005 4.96 6.49005 4.96 7.71005C4.96 8.93005 5.85 10.1101 5.97 10.2701C6.09 10.4401 7.72 12.9401 10.2 14.0101C10.79 14.2701 11.25 14.4201 11.61 14.5301C12.2 14.7201 12.74 14.6901 13.17 14.6301C13.65 14.5601 14.64 14.0301 14.84 13.4501C15.05 12.8701 15.05 12.3801 14.98 12.2701C14.91 12.1601 14.76 12.1101 14.51 11.9901Z"
+          fill="#FFFFFF" />
+      </svg>
+    </span>
   </a>
-  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+  <button class="scroll-top" aria-label="Voltar ao topo">
+    <span class="sr-only">Voltar ao topo</span>
+    <img src="images/icons/icon-arrow-branco.svg" alt="" aria-hidden="true" width="20" height="20">
+  </button>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script src="js/animations.js" defer></script>
   <script src="js/form-validation.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
+
 </html>
