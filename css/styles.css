@@ -158,6 +158,69 @@ body {
 	position: relative;
 	overflow: hidden;
 }
+.hero--carousel {
+	padding: 0;
+	background: #f6d11a;
+}
+.hero-carousel {
+	position: relative;
+	overflow: hidden;
+	touch-action: pan-y pinch-zoom;
+	user-select: none;
+	cursor: grab;
+	-webkit-user-drag: none;
+}
+.hero-carousel.is-dragging {
+	cursor: grabbing;
+}
+.hero-carousel__track {
+	position: relative;
+	display: flex;
+	width: 100%;
+	aspect-ratio: 1920 / 568;
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: transform;
+}
+.hero-carousel__slide {
+	flex: 0 0 100%;
+	min-width: 100%;
+}
+.hero-carousel.is-dragging .hero-carousel__track {
+	transition: none;
+}
+.hero-carousel__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	pointer-events: none;
+	user-select: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.hero-carousel__dots {
+	position: absolute;
+	left: 50%;
+	bottom: 1.5rem;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 0.6rem;
+}
+.hero-carousel__dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 999px;
+	border: none;
+	background: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	transition: var(--transition);
+}
+.hero-carousel__dot.is-active {
+	background: #fff;
+	transform: scale(1.2);
+}
 .hero__body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1208,6 +1271,22 @@ body.modal-open {
 	}
 	.hero {
 		padding: 3rem 0;
+	}
+	.hero--carousel {
+		padding: 0;
+	}
+	.hero-carousel__track {
+		aspect-ratio: 16 / 9;
+		min-height: unset;
+	}
+	.hero-carousel__image {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		object-position: center;
+	}
+	.hero-carousel__dots {
+		bottom: 1rem;
 	}
 	.hero__body {
 		grid-template-columns: 1fr;
