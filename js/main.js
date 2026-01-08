@@ -101,6 +101,7 @@ if (heroCarousel) {
 
 		let currentIndex = 1; // Começa no primeiro slide real
 		let autoTimer = null;
+		let loopFallbackTimer = null;
 		let isDragging = false;
 		let slideWidth = 0;
 		let startPos = 0;
@@ -131,6 +132,26 @@ if (heroCarousel) {
 			});
 		};
 
+		const resetLoopPosition = () => {
+			if (currentIndex === 0 || currentIndex === totalSlides + 1) {
+				track.style.transition = 'none';
+				currentIndex = currentIndex === 0 ? totalSlides : 1;
+				setPositionByIndex();
+				track.offsetHeight;
+				track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+			}
+		};
+
+		const scheduleLoopFix = () => {
+			if (loopFallbackTimer) {
+				clearTimeout(loopFallbackTimer);
+			}
+			loopFallbackTimer = setTimeout(() => {
+				resetLoopPosition();
+				updateDots();
+			}, 700);
+		};
+
 		const animation = () => {
 			setSliderPosition();
 			if (isDragging) requestAnimationFrame(animation);
@@ -143,6 +164,7 @@ if (heroCarousel) {
 				track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
 				setPositionByIndex();
 				updateDots();
+				scheduleLoopFix();
 			}, 10000);
 		};
 
@@ -196,20 +218,12 @@ if (heroCarousel) {
 			track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
 			setPositionByIndex();
 			updateDots();
+			scheduleLoopFix();
 			startAutoPlay();
 		};
 
 		const handleTransitionEnd = () => {
-			// Loop infinito
-			if (currentIndex === 0) {
-				track.style.transition = 'none';
-				currentIndex = totalSlides;
-				setPositionByIndex();
-			} else if (currentIndex === totalSlides + 1) {
-				track.style.transition = 'none';
-				currentIndex = 1;
-				setPositionByIndex();
-			}
+			resetLoopPosition();
 			updateDots();
 		};
 
@@ -221,6 +235,9 @@ if (heroCarousel) {
 		window.addEventListener('touchmove', touchMove, { passive: true });
 		window.addEventListener('mouseup', touchEnd);
 		window.addEventListener('touchend', touchEnd);
+		window.addEventListener('touchcancel', touchEnd);
+		window.addEventListener('mouseleave', touchEnd);
+		window.addEventListener('blur', touchEnd);
 
 		// Dots
 		dots.forEach((dot, index) => {
@@ -230,6 +247,7 @@ if (heroCarousel) {
 				track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
 				setPositionByIndex();
 				updateDots();
+				scheduleLoopFix();
 				startAutoPlay();
 			});
 		});
