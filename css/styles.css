@@ -353,7 +353,7 @@ section {
 	color: #fff;
 }
 .benefits {
-	background: #ecefed;
+	background: #d5195f;
 	padding: 5rem 0;
 }
 .benefits__header {
@@ -365,19 +365,19 @@ section {
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #d5195f;
+	color: #ffe51b;
 	margin-bottom: 1rem;
 }
 .benefits__title {
 	font-size: 2.4rem;
 	font-weight: 600;
-	color: #555555;
+	color: #fff;
 	margin-bottom: 0.8rem;
 }
 .benefits__subtitle {
 	font-size: 24px;
 	font-weight: 400;
-	color: #6c6c6c;
+	color: #fff;
 }
 .benefits__grid {
 	display: grid;
@@ -447,7 +447,7 @@ section {
 	color: var(--color-bordo-escuro);
 }
 .plans {
-	background: #bf0045;
+	background: #ecefed;
 	padding: 5rem 0;
 }
 .plans__header {
@@ -459,13 +459,13 @@ section {
 	letter-spacing: 0.25em;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #ffd31b;
+	color: #d5195f;
 	margin-bottom: 1rem;
 }
 .plans__title {
 	font-size: 2.4rem;
 	font-weight: 600;
-	color: #fff;
+	color: #555555;
 	margin-bottom: 0.5rem;
 }
 .plans__subtitle {
