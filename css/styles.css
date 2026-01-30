@@ -61,8 +61,8 @@ section {
 	gap: 0.5rem;
 	padding: 0.7rem 2rem;
 	border-radius: 999px;
-	border: 2px solid #ffd31b;
-	color: #ffd31b;
+	border: 2px solid #fff;
+	color: #fff;
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
@@ -71,7 +71,7 @@ section {
 	text-decoration: none;
 }
 .chip--phone .icon svg path {
-	stroke: #ffd31b;
+	stroke: #fff;
 }
 .chip--phone-secondary {
 	border: 2px solid #666;
@@ -83,7 +83,7 @@ section {
 	stroke: #666;
 }
 .chip--whats {
-	background: #ffd31b;
+	background: #fff;
 	border: none;
 	color: #666;
 	text-decoration: none;
@@ -91,7 +91,7 @@ section {
 	transition: var(--transition);
 }
 .chip--whats:hover {
-	background: #f5d200;
+	background: #f2f2f2;
 }
 .chip--whats .icon svg path {
 	fill: #666;
@@ -102,8 +102,8 @@ section {
 	gap: 0.5rem;
 	padding: 0.65rem 1.4rem;
 	border-radius: 999px;
-	border: 1.5px solid #ffd31b;
-	color: #ffd31b;
+	border: 1.5px solid #fff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 0.05em;
@@ -111,14 +111,14 @@ section {
 	transition: var(--transition);
 }
 .btn--chip:hover {
-	background: rgba(255, 229, 27, 0.15);
+	background: rgba(255, 255, 255, 0.15);
 }
 .btn--chip .icon svg path {
-	stroke: #ffd31b;
+	stroke: #fff;
 }
 .btn--chip-whats {
-	background: #ffd31b;
-	border-color: #ffd31b;
+	background: #fff;
+	border-color: #fff;
 	color: #5c2f00;
 }
 .btn--chip-whats .icon svg path {
@@ -331,12 +331,12 @@ section {
 	cursor: pointer;
 }
 .btn--primary {
-	background: var(--color-amarelo);
+	background: var(--color-branco);
 	color: var(--color-bordo-escuro);
 }
 .btn--primary:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 10px 25px rgba(255, 229, 27, 0.35);
+	box-shadow: 0 10px 25px rgba(255, 255, 255, 0.35);
 }
 .btn--secondary {
 	background: var(--color-laranja);
@@ -864,7 +864,7 @@ section {
 	transform: translateY(-2px);
 }
 .ready-cta__btn--whats {
-	background: #ffd31b;
+	background: #fff;
 	color: #8b0038;
 }
 .ready-cta__btn--whats:hover {
@@ -872,8 +872,8 @@ section {
 	transform: translateY(-2px);
 }
 .ready-cta__btn--outline {
-	border: 2px solid #ffd31b;
-	color: #ffd31b;
+	border: 2px solid #fff;
+	color: #fff;
 }
 .ready-cta__btn--outline:hover {
 	transform: translateY(-2px);
@@ -1132,7 +1132,7 @@ section {
 	font-weight: 600;
 }
 .footer__whats {
-	background: #ffd31b;
+	background: #fff;
 	color: #8b0038;
 	padding: 0.75rem 1.8rem;
 	border-radius: 999px;
